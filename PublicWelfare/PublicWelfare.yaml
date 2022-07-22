@@ -1,0 +1,5 @@
+proxies:
+  - {"type":"vmess","name":"🇺🇸┃美国┃✈@PapaLaozi┃107","ws-opts":{"path":"/","headers":{"host":"706cv4nbax36m5.cooc.icu"}},"server":"706cv4nbax36m5.cooc.icu","port":"443","uuid":"83016235-161b-445e-832a-3d47a51fc472","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"vmess","name":"🇺🇸┃美国┃✈@PapaLaozi┃108","ws-opts":{"path":"/","headers":{"host":"qqf5vrvygt1rhl.cooc.icu"}},"server":"qqf5vrvygt1rhl.cooc.icu","port":"443","uuid":"83016235-161b-445e-832a-3d47a51fc472","alterId":"0","cipher":"auto","network":"ws","tls":true}
+  - {"type":"trojan","name":"🇯🇵┃日本┃✈@PapaLaozi┃109","server":"musashino.freetrade.link","port":443,"password":"ZDqCRlxB8uFj9pxNEeanya3DIpDlOYR7K0wOYX3eScA36gTAazCyZ5SC3FS428","udp":true,"skip-cert-verify":true}
+  - {"type":"trojan","name":"🇺🇸┃美国┃✈@PapaLaozi┃110","server":"assets.freetrade.link","port":443,"password":"T3YSRnD2AuS9xRF36F834y3DaIwNCZzgAeC7CeS8aBcxKjEYp0qXDpOllOayZ5","udp":true,"skip-cert-verify":true}

@@ -112,3 +112,4 @@ proxies:
   - {"type":"vmess","name":"[公益]🇰🇷Azure韩国1Gbps","ws-opts":{"path":"/","headers":{"host":"azkr.gd1214b.net"}},"server":"azkr.gd1214b.net","port":443,"uuid":"055bf827-f723-4cf7-85ac-33e83c6e1d96","alterId":0,"cipher":"auto","network":"ws","tls":true}
   - {"type":"vmess","name":"[公益]🇯🇵Azure日本","ws-opts":{"path":"/3f8d7a9ba6?ed=2048"},"server":"azjp.gd1214b.tech","port":443,"uuid":"039c184e-9f50-46ec-80a3-c506c78c2a44","alterId":0,"cipher":"auto","network":"ws","tls":true}
   - {"type":"trojan","name":"[公益]🇭🇰Azure香港10Gbps","server":"trojan-daozhu-uallen-qbit-azure-hk.kinhproxy.com","port":443,"password":"trojan-daozhu-uallen-qbit-azure-hk","udp":true,"skip-cert-verify":true,"sni":"trojan-daozhu-uallen-qbit-azure-hk.kinhproxy.com"}
+  - {"type":"trojan","name":"[公益] 🇭🇰 Azure香港|ShareCentre","server":"azhk.sharecentre.xyz","port":443,"password":"sharecentre","udp":true,"skip-cert-verify":true}

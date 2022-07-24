@@ -4,8 +4,8 @@ import time, os
 from sub_convert import sub_convert
 from list_merge import sub_merge
 
-Eterniy_file = './Eternity'
-Eternity_yml_file = './Eternity.yml'
+Eterniy_file = './PapaLaozai'
+Eternity_yml_file = './PapaLaozai.yml'
 readme = './README.md'
 
 provider_path = './update/provider/'

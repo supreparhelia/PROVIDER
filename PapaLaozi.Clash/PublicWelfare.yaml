@@ -1,4 +1,0 @@
-proxies:
-  - {"type":"vmess","name":"【公益】🇯🇵 日本 Azure｜","ws-opts":{"path":"/3f8d7a9ba6?ed=2048"},"server":"azjp.gd1214b.tech","port":443,"uuid":"039c184e-9f50-46ec-80a3-c506c78c2a44","alterId":0,"cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"【公益】🇭🇰 香港 Azure 20Gbps｜无限流量","ws-opts":{"path":"/Sharecentrepro"},"server":"azhk.sharecentre.xyz","port":58975,"uuid":"f0e9aff1-ba59-4af4-f3a1-6d17fffb4aca","alterId":0,"cipher":"auto","network":"ws","tls":true}
-  - {"type":"vmess","name":"【公益】🇭🇰 香港 Azure｜TEST","ws-opts":{"path":"/test"},"server":"20.205.61.214","port":"5555","uuid":"ffbcda81-7600-45eb-ccdd-3cffeeef336c","alterId":"0","cipher":"auto","network":"ws"}

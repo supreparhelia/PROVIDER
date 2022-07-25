@@ -1,0 +1,100 @@
+name: Nodes
+
+on: 
+  schedule: #これは UTC+0         #これは UTC+8
+    - cron: '*/34 0-8 * * 1-5'   #工作日 上午8:00 - 下午4:00
+    - cron: '*/24 8-14 * * 1-5'  #工作日 下午4:00 - 下午10:00
+    - cron: '*/54 14-21 * * 1-5' #工作日 下午10:00 - 次日凌晨5:00
+    - cron: '*/24 21-23 * * 1-5' #工作日 次日凌晨5:00 - 次日上午8:00
+    - cron: '*/24 * * * 0,6'     #休息日 全天候
+  workflow_dispatch: #手动调试按钮
+
+
+
+jobs: 
+
+  my-job: 
+    name: Max Job
+    runs-on: ubuntu-latest
+    steps: 
+    - uses: actions/checkout@v3     #git clone
+    - uses: actions/setup-node@v3   #Node.js环境
+      with:
+        node-version: '16.x'        #Node.js 16.x
+    - uses: actions/setup-python@v4 #python环境
+      with:
+        python-version: '3.x'       #python 3.x
+        cache: 'pip'                #pip cache
+    - name: Timezone #UTC+0 → UTC+8
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: git
+      run: | #配置git的上传用户名和邮箱
+         git config pull.rebase false
+         git config --local user.name "GitHub Actions"
+         git config --local user.email "actions@github.com"
+    - name: npm
+      run: | #安装npm包
+         cd ./utils/rm/
+         npm ci
+    - name: pip
+      run: | #安装pip包
+         pip install -r ./utils/pool/requirements.txt
+         pip install -r ./utils/clashcheck/requirements.txt
+    - name: pool #input ./utils/pool/config.yaml
+      run: cd ./utils/pool/ && python main.py #output ./utils/pool/output.yaml
+    - name: copy pool to clashcheck #input ./utils/pool/output.yaml
+      run: cp ./utils/pool/output.yaml ./utils/clashcheck/input.yaml #output ./utils/clashcheck/input.yaml
+    - name: clashcheck #because ./utils/clashcheck/config.yaml so input ./utils/clashcheck/input.yaml
+      run: cd ./utils/clashcheck/ && python main.py && python main.py && python main.py && rm input.yaml #output ./utils/clashcheck/check.yaml & delete ./utils/clashcheck/input.yaml
+    - name: move clashcheck to clash2base64 #input ./utils/clashcheck/check.yaml
+      run: mv ./utils/clashcheck/check.yaml ./utils/subconverter/check.yaml #output ./utils/subconverter/check.yaml
+    - name: clash2base64 #input ./utils/subconverter/check.yaml
+      run: ./utils/subconverter/subconverter -g --artifact "clash2base64" && rm utils/subconverter/check.yaml #output ./utils/subconverter/check & delete ./utils/subconverter/check.yaml
+    - name: base64 decode #because ./utils/subconverter/generate.ini so input ./utils/subconverter/check
+      run: base64 -d ./utils/subconverter/check > ./utils/rm/url && rm ./utils/subconverter/check #output ./utils/rm/url & delete ./utils/subconverter/check
+    - name: remove & rename #input ./utils/rm/url
+      run: cd ./utils/rm/ && npm start #output ./utils/rm/out
+    - name: url & https & long
+      run: | #input ./utils/rm/out
+         rm ./utils/rm/url             #delete ./utils/rm/url
+         mv ./utils/rm/out ./url       #output ./url
+         ./.github/url.sh > ./1        #output ./1
+         cp url 2                      #output ./2
+         cat 1 2 > 3 && rm 1 2         #output ./3 & delete ./1 ./2
+         base64 3 > https -w 0 && rm 3 #output ./https & delete ./3
+         base64 url > long -w 0        #output ./long
+         sort url -o url #将url排序并修改至原文件，突出增删的节点 output ./url
+         cp ./long ./utils/subconverter/long #将long代入subconverter的bade642clash
+    - name: Clash.yaml
+      run: | #input ./utils/subconverter/long
+         ./utils/subconverter/subconverter -g --artifact "base642clash"
+         #output ./utils/subconverter/Clash.yaml
+         mv ./utils/subconverter/Clash.yaml ./Clash.yaml || true #output ./Clash.yaml
+         rm ./utils/subconverter/long #delete ./utils/subconverter/long
+    - name: git push
+      run: ./.github/update-repo.sh || true   #upload files ./url ./https ./long ./Clash.yaml ./utils/pool/output.yaml to GitHub
+
+  long: #jsDelivr long同步
+    needs: my-job
+    runs-on: ubuntu-latest
+    steps:
+    - name: CDN
+      run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/long
+  HTTPS: #jsDelivr HTTPS同步
+    needs: my-job
+    runs-on: ubuntu-latest
+    steps:
+    - name: CDN
+      run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/https
+  Clash: #jsDelivr Clash同步
+    needs: my-job
+    runs-on: ubuntu-latest
+    steps:
+    - name: CDN
+      run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/Clash.yaml
+  Quanx: #jsDelivr Quanx同步
+    needs: my-job
+    runs-on: ubuntu-latest
+    steps:
+    - name: CDN
+      run: curl https://purge.jsdelivr.net/gh/yu-steven/openit@main/Quanx.conf

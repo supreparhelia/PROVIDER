@@ -62,7 +62,7 @@ proxy-groups:
       - 🎯 全球直连
       - ♻️ 自动选择
     use:
-      - NullNode
+      - PapaLaozi
       - OpenitNode
   - name: 🎥 NETFLIX
     type: select

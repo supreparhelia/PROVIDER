@@ -31,15 +31,6 @@ proxy-groups:
       - 🛑 全球拦截
       - 🎯 全球直连
       - 🗿 PAPALAOZI
-  - name: 📢 谷歌FCM
-    type: select
-    proxies:
-      - 🗿 PAPALAOZI
-      - 🎯 全球直连
-      - ♻️ 自动选择
-    use:
-      - PapaLaozi
-      - OpenitNode
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -64,22 +55,6 @@ proxy-groups:
       - 🗿 PAPALAOZI
       - 🎯 全球直连
       - ♻️ 自动选择
-    use:
-      - PapaLaozi
-      - OpenitNode
-  - name: Ⓜ️ 微软服务
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🗿 PAPALAOZI
-    use:
-      - PapaLaozi
-      - OpenitNode
-  - name: 🍎 苹果服务
-    type: select
-    proxies:
-      - 🗿 PAPALAOZI
-      - 🎯 全球直连
     use:
       - PapaLaozi
       - OpenitNode

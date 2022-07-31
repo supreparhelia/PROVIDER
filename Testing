@@ -1,11 +1,10 @@
 #  Hi,We are free ,please avoid fraud.
-#  Generated at 2022-07-31 00:00 by PapaLaozi
-#  白名单模式+YouTube+Netflix 分流规则
-port: 7890
-socks-port: 7891
-allow-lan: true
+#  Generated at 2022-07-30 00:00 by PapaLaozi
+#  白名单模式+YouTube+NETFLIX 分流规则
+mixed-port: 7890
+allow-lan: false
 mode: Rule
-log-level: info
+log-level: silent
 external-controller: 0.0.0.0:9090
 proxies:
 
@@ -50,6 +49,15 @@ proxy-groups:
       - PapaLaozi
       - OpenitNode
   - name: 📢 谷歌FCM
+    type: select
+    proxies:
+      - 🗿 PAPALAOZI
+      - 🎯 全球直连
+      - ♻️ 自动选择
+    use:
+      - PapaLaozi
+      - OpenitNode
+  - name: 📺 YouTube
     type: select
     proxies:
       - 🗿 PAPALAOZI
@@ -146,134 +154,134 @@ rule-providers:
   reject:
     type: http
     behavior: domain
-    url: "https://cdn.statically.io/gh/Loyalsoldier/clash-rules/release/reject.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/reject.txt"
     path: ./ruleset/reject.yaml
     interval: 86400
   icloud:
     type: http
     behavior: domain
-    url: "https://cdn.statically.io/gh/Loyalsoldier/clash-rules/release/icloud.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/icloud.txt"
     path: ./ruleset/icloud.yaml
     interval: 86400
   apple:
     type: http
     behavior: domain
-    url: "https://cdn.statically.io/gh/Loyalsoldier/clash-rules/release/apple.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/apple.txt"
     path: ./ruleset/apple.yaml
     interval: 86400
   google:
     type: http
     behavior: domain
-    url: "https://cdn.statically.io/gh/Loyalsoldier/clash-rules/release/google.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/google.txt"
     path: ./ruleset/google.yaml
     interval: 86400
   proxy:
     type: http
     behavior: domain
-    url: "https://cdn.statically.io/gh/Loyalsoldier/clash-rules/release/proxy.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/proxy.txt"
     path: ./ruleset/proxy.yaml
     interval: 86400
   direct:
     type: http
     behavior: domain
-    url: "https://cdn.statically.io/gh/Loyalsoldier/clash-rules/release/direct.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/direct.txt"
     path: ./ruleset/direct.yaml
     interval: 86400
   private:
     type: http
     behavior: domain
-    url: "https://cdn.statically.io/gh/Loyalsoldier/clash-rules/release/private.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/private.txt"
     path: ./ruleset/private.yaml
     interval: 86400
   gfw:
     type: http
     behavior: domain
-    url: "https://cdn.statically.io/gh/Loyalsoldier/clash-rules/release/gfw.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/gfw.txt"
     path: ./ruleset/gfw.yaml
     interval: 86400
   greatfire:
     type: http
     behavior: domain
-    url: "https://cdn.statically.io/gh/Loyalsoldier/clash-rules/release/greatfire.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/greatfire.txt"
     path: ./ruleset/greatfire.yaml
     interval: 86400
   tld-not-cn:
     type: http
     behavior: domain
-    url: "https://cdn.statically.io/gh/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/tld-not-cn.txt"
     path: ./ruleset/tld-not-cn.yaml
     interval: 86400
   telegramcidr:
     type: http
     behavior: ipcidr
-    url: "https://cdn.statically.io/gh/Loyalsoldier/clash-rules/release/telegramcidr.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/telegramcidr.txt"
     path: ./ruleset/telegramcidr.yaml
     interval: 86400
   cncidr:
     type: http
     behavior: ipcidr
-    url: "https://cdn.statically.io/gh/Loyalsoldier/clash-rules/release/cncidr.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/cncidr.txt"
     path: ./ruleset/cncidr.yaml
     interval: 86400
   lancidr:
     type: http
     behavior: ipcidr
-    url: "https://cdn.statically.io/gh/Loyalsoldier/clash-rules/release/lancidr.txt"
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/lancidr.txt"
     path: ./ruleset/lancidr.yaml
     interval: 86400
 # 分流规则
 rules:
-  - DOMAIN-KEYWORD,youtube,Youtube
-  - DOMAIN,youtubei.googleapis.com,Youtube
-  - DOMAIN,yt3.ggpht.com,Youtube
-  - DOMAIN-SUFFIX,googlevideo.com,Youtube
-  - DOMAIN-SUFFIX,gvt2.com,Youtube
-  - DOMAIN-SUFFIX,withyoutube.com,Youtube
-  - DOMAIN-SUFFIX,youtu.be,Youtube
-  - DOMAIN-SUFFIX,youtube-nocookie.com,Youtube
-  - DOMAIN-SUFFIX,youtube.com,Youtube
-  - DOMAIN-SUFFIX,youtubeeducation.com,Youtube
-  - DOMAIN-SUFFIX,youtubegaming.com,Youtube
-  - DOMAIN-SUFFIX,youtubekids.com,Youtube
-  - DOMAIN-SUFFIX,yt.be,Youtube
-  - DOMAIN-SUFFIX,ytimg.com,Youtube
-  - DOMAIN-KEYWORD,netflixdnstest,Netflix
-  - DOMAIN,netflix.com.edgesuite.net,Netflix
-  - DOMAIN-SUFFIX,fast.com,Netflix
-  - DOMAIN-SUFFIX,netflix.com,Netflix
-  - DOMAIN-SUFFIX,netflix.net,Netflix
-  - DOMAIN-SUFFIX,netflixdnstest0.com,Netflix
-  - DOMAIN-SUFFIX,netflixdnstest1.com,Netflix
-  - DOMAIN-SUFFIX,netflixdnstest2.com,Netflix
-  - DOMAIN-SUFFIX,netflixdnstest3.com,Netflix
-  - DOMAIN-SUFFIX,netflixdnstest4.com,Netflix
-  - DOMAIN-SUFFIX,netflixdnstest5.com,Netflix
-  - DOMAIN-SUFFIX,netflixdnstest6.com,Netflix
-  - DOMAIN-SUFFIX,netflixdnstest7.com,Netflix
-  - DOMAIN-SUFFIX,netflixdnstest8.com,Netflix
-  - DOMAIN-SUFFIX,netflixdnstest9.com,Netflix
-  - DOMAIN-SUFFIX,nflxext.com,Netflix
-  - DOMAIN-SUFFIX,nflximg.com,Netflix
-  - DOMAIN-SUFFIX,nflximg.net,Netflix
-  - DOMAIN-SUFFIX,nflxso.net,Netflix
-  - DOMAIN-SUFFIX,nflxvideo.net,Netflix
-  - IP-CIDR,8.41.4.0/24,Netflix,no-resolve
-  - IP-CIDR,23.246.0.0/18,Netflix,no-resolve
-  - IP-CIDR,37.77.184.0/21,Netflix,no-resolve
-  - IP-CIDR,38.72.126.0/24,Netflix,no-resolve
-  - IP-CIDR,45.57.0.0/17,Netflix,no-resolve
-  - IP-CIDR,64.120.128.0/17,Netflix,no-resolve
-  - IP-CIDR,66.197.128.0/17,Netflix,no-resolve
-  - IP-CIDR,69.53.224.0/19,Netflix,no-resolve
-  - IP-CIDR,103.87.204.0/22,Netflix,no-resolve
-  - IP-CIDR,108.175.32.0/20,Netflix,no-resolve
-  - IP-CIDR,185.2.220.0/22,Netflix,no-resolve
-  - IP-CIDR,185.9.188.0/22,Netflix,no-resolve
-  - IP-CIDR,192.173.64.0/18,Netflix,no-resolve
-  - IP-CIDR,198.38.96.0/19,Netflix,no-resolve
-  - IP-CIDR,198.45.48.0/20,Netflix,no-resolve
-  - IP-CIDR,207.45.72.0/22,Netflix,no-resolve
-  - IP-CIDR,208.75.76.0/22,Netflix,no-resolve
+  - DOMAIN-KEYWORD,youtube,📺 YouTube
+  - DOMAIN,youtubei.googleapis.com,📺 YouTube
+  - DOMAIN,yt3.ggpht.com,📺 YouTube
+  - DOMAIN-SUFFIX,googlevideo.com,📺 YouTube
+  - DOMAIN-SUFFIX,gvt2.com,📺 YouTube
+  - DOMAIN-SUFFIX,withyoutube.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtu.be,📺 YouTube
+  - DOMAIN-SUFFIX,youtube-nocookie.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtubeeducation.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtubegaming.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtubekids.com,📺 YouTube
+  - DOMAIN-SUFFIX,yt.be,📺 YouTube
+  - DOMAIN-SUFFIX,ytimg.com,📺 YouTube
+  - DOMAIN-KEYWORD,netflixdnstest,🎥 NETFLIX
+  - DOMAIN,netflix.com.edgesuite.net,🎥 NETFLIX
+  - DOMAIN-SUFFIX,fast.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflix.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflix.net,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest0.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest1.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest2.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest3.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest4.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest5.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest6.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest7.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest8.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest9.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,nflxext.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,nflximg.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,nflximg.net,🎥 NETFLIX
+  - DOMAIN-SUFFIX,nflxso.net,🎥 NETFLIX
+  - DOMAIN-SUFFIX,nflxvideo.net,🎥 NETFLIX
+  - IP-CIDR,8.41.4.0/24,🎥 NETFLIX,no-resolve
+  - IP-CIDR,23.246.0.0/18,🎥 NETFLIX,no-resolve
+  - IP-CIDR,37.77.184.0/21,🎥 NETFLIX,no-resolve
+  - IP-CIDR,38.72.126.0/24,🎥 NETFLIX,no-resolve
+  - IP-CIDR,45.57.0.0/17,🎥 NETFLIX,no-resolve
+  - IP-CIDR,64.120.128.0/17,🎥 NETFLIX,no-resolve
+  - IP-CIDR,66.197.128.0/17,🎥 NETFLIX,no-resolve
+  - IP-CIDR,69.53.224.0/19,🎥 NETFLIX,no-resolve
+  - IP-CIDR,103.87.204.0/22,🎥 NETFLIX,no-resolve
+  - IP-CIDR,108.175.32.0/20,🎥 NETFLIX,no-resolve
+  - IP-CIDR,185.2.220.0/22,🎥 NETFLIX,no-resolve
+  - IP-CIDR,185.9.188.0/22,🎥 NETFLIX,no-resolve
+  - IP-CIDR,192.173.64.0/18,🎥 NETFLIX,no-resolve
+  - IP-CIDR,198.38.96.0/19,🎥 NETFLIX,no-resolve
+  - IP-CIDR,198.45.48.0/20,🎥 NETFLIX,no-resolve
+  - IP-CIDR,207.45.72.0/22,🎥 NETFLIX,no-resolve
+  - IP-CIDR,208.75.76.0/22,🎥 NETFLIX,no-resolve
   - PROCESS-NAME,v2ray,DIRECT
   - PROCESS-NAME,xray,DIRECT
   - PROCESS-NAME,naive,DIRECT
@@ -325,9 +333,9 @@ rules:
   - RULE-SET,icloud,DIRECT
   - RULE-SET,apple,DIRECT
   - RULE-SET,google,DIRECT
-  - RULE-SET,proxy,PROXY
+  - RULE-SET,proxy,🗿 PAPALAOZI
   - RULE-SET,direct,DIRECT
-  - RULE-SET,telegramcidr,PROXY
+  - RULE-SET,telegramcidr,🗿 PAPALAOZI
   - GEOIP,,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,PROXY
+  - MATCH,🗿 PAPALAOZI

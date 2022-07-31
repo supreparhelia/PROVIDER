@@ -9,7 +9,7 @@ external-controller: 0.0.0.0:9090
 proxies:
 
 proxy-groups:
-  - name: 🗿 PAPALAOZI
+  - name: 🗿 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
@@ -21,7 +21,6 @@ proxy-groups:
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    proxies:
     use:
       - PapaLaozi
       - OpenitNode
@@ -30,20 +29,45 @@ proxy-groups:
     proxies:
       - 🛑 全球拦截
       - 🎯 全球直连
-      - 🗿 PAPALAOZI
-  - name: 🎥 NETFLIX
+      - 🗿 节点选择
+  - name: 🌎 国外媒体
     type: select
     proxies:
-      - 🗿 PAPALAOZI
-      - 🎯 全球直连
+      - 🗿 节点选择
       - ♻️ 自动选择
+      - 🎯 全球直连
+    use:
+      - PapaLaozi
+      - OpenitNode
+  - name: 🌏 国内媒体
+    type: select
+    proxies:
+      - 🗿 节点选择
+      - 🎯 全球直连
+    use:
+      - PapaLaozi
+      - OpenitNode
+  - name: 📢 谷歌FCM
+    type: select
+    proxies:
+      - 🗿 节点选择
+      - 🎯 全球直连
     use:
       - PapaLaozi
       - OpenitNode
   - name: 📺 YouTube
     type: select
     proxies:
-      - 🗿 PAPALAOZI
+      - 🗿 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+    use:
+      - NullNode
+      - OpenitNode
+  - name: 🎥 NETFLIX
+    type: select
+    proxies:
+      - 🗿 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
     use:
@@ -52,7 +76,23 @@ proxy-groups:
   - name: 📲 电报信息
     type: select
     proxies:
-      - 🗿 PAPALAOZI
+      - 🗿 节点选择
+      - 🎯 全球直连
+    use:
+      - PapaLaozi
+      - OpenitNode
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🗿 节点选择
+    use:
+      - PapaLaozi
+      - OpenitNode
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🗿 节点选择
       - 🎯 全球直连
     use:
       - PapaLaozi
@@ -61,9 +101,19 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
-      - 🗿 PAPALAOZI
+      - 🗿 节点选择
       - ♻️ 自动选择
   - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🆎 AdBlock
     type: select
     proxies:
       - REJECT
@@ -71,7 +121,7 @@ proxy-groups:
   - name: 🐟 漏网之鱼
     type: select
     proxies:
-      - 🗿 PAPALAOZI
+      - 🗿 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
     use:

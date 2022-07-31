@@ -58,7 +58,7 @@ proxy-groups:
       - ♻️ 自动选择
     use:
       - OpenitNode
- - name: 🎥 NETFLIX
+  - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🗿 节点选择

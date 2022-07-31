@@ -53,7 +53,7 @@ proxy-groups:
   - name: 📺 YouTube
     type: select
     proxies:
-      - 🗿 PAPALAOZI
+      - 🗿 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
     use:

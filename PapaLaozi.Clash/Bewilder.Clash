@@ -21,6 +21,7 @@ proxy-groups:
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
+    tolerance: 50
     proxies:
     use:
       - PapaLaozi
@@ -31,7 +32,16 @@ proxy-groups:
       - 🛑 全球拦截
       - 🎯 全球直连
       - 🗿 PAPALAOZI
-  - name: 📺 YouTube
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🗿 PAPALAOZI
+      - ♻️ 自动选择
+      - 🎯 全球直连
+    use:
+      - PapaLaozi
+      - OpenitNode
+  - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🗿 PAPALAOZI
@@ -40,7 +50,41 @@ proxy-groups:
     use:
       - PapaLaozi
       - OpenitNode
+  - name: 📺 YouTube
+    type: select
+    proxies:
+      - 🗿 PAPALAOZI
+      - 🎯 全球直连
+      - ♻️ 自动选择
+    use:
+      - PapaLaozi
+      - OpenitNode 
+  - name: 🎥 NETFLIX
+    type: select
+    proxies:
+      - 🗿 PAPALAOZI
+      - 🎯 全球直连
+      - ♻️ 自动选择
+    use:
+      - PapaLaozi
+      - OpenitNode 
   - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🗿 PAPALAOZI
+      - 🎯 全球直连
+    use:
+      - PapaLaozi
+      - OpenitNode
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🗿 PAPALAOZI
+    use:
+      - PapaLaozi
+      - OpenitNode
+  - name: 🍎 苹果服务
     type: select
     proxies:
       - 🗿 PAPALAOZI
@@ -59,12 +103,21 @@ proxy-groups:
     proxies:
       - REJECT
       - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🆎 AdBlock
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
   - name: 🐟 漏网之鱼
     type: select
     proxies:
       - 🗿 PAPALAOZI
       - 🎯 全球直连
-      - ♻️ 自动选择
     use:
       - PapaLaozi
       - OpenitNode
@@ -181,6 +234,43 @@ rules:
   - DOMAIN-SUFFIX,youtubekids.com,📺 YouTube
   - DOMAIN-SUFFIX,yt.be,📺 YouTube
   - DOMAIN-SUFFIX,ytimg.com,📺 YouTube
+  - DOMAIN-KEYWORD,netflixdnstest,🎥 NETFLIX
+  - DOMAIN,netflix.com.edgesuite.net,🎥 NETFLIX
+  - DOMAIN-SUFFIX,fast.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflix.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflix.net,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest0.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest1.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest2.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest3.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest4.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest5.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest6.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest7.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest8.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,netflixdnstest9.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,nflxext.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,nflximg.com,🎥 NETFLIX
+  - DOMAIN-SUFFIX,nflximg.net,🎥 NETFLIX
+  - DOMAIN-SUFFIX,nflxso.net,🎥 NETFLIX
+  - DOMAIN-SUFFIX,nflxvideo.net,🎥 NETFLIX
+  - IP-CIDR,8.41.4.0/24,🎥 NETFLIX,no-resolve
+  - IP-CIDR,23.246.0.0/18,🎥 NETFLIX,no-resolve
+  - IP-CIDR,37.77.184.0/21,🎥 NETFLIX,no-resolve
+  - IP-CIDR,38.72.126.0/24,🎥 NETFLIX,no-resolve
+  - IP-CIDR,45.57.0.0/17,🎥 NETFLIX,no-resolve
+  - IP-CIDR,64.120.128.0/17,🎥 NETFLIX,no-resolve
+  - IP-CIDR,66.197.128.0/17,🎥 NETFLIX,no-resolve
+  - IP-CIDR,69.53.224.0/19,🎥 NETFLIX,no-resolve
+  - IP-CIDR,103.87.204.0/22,🎥 NETFLIX,no-resolve
+  - IP-CIDR,108.175.32.0/20,🎥 NETFLIX,no-resolve
+  - IP-CIDR,185.2.220.0/22,🎥 NETFLIX,no-resolve
+  - IP-CIDR,185.9.188.0/22,🎥 NETFLIX,no-resolve
+  - IP-CIDR,192.173.64.0/18,🎥 NETFLIX,no-resolve
+  - IP-CIDR,198.38.96.0/19,🎥 NETFLIX,no-resolve
+  - IP-CIDR,198.45.48.0/20,🎥 NETFLIX,no-resolve
+  - IP-CIDR,207.45.72.0/22,🎥 NETFLIX,no-resolve
+  - IP-CIDR,208.75.76.0/22,🎥 NETFLIX,no-resolve
   - PROCESS-NAME,v2ray,DIRECT
   - PROCESS-NAME,xray,DIRECT
   - PROCESS-NAME,naive,DIRECT
@@ -228,7 +318,7 @@ rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
   - RULE-SET,private,DIRECT
-  - RULE-SET,reject,🛑 全球拦截
+  - RULE-SET,reject,🆎 AdBlock
   - RULE-SET,icloud,DIRECT
   - RULE-SET,apple,DIRECT
   - RULE-SET,google,DIRECT

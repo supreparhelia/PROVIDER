@@ -315,13 +315,15 @@ rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
   - RULE-SET,private,DIRECT
-  - RULE-SET,reject,🛑 全球拦截
+  - RULE-SET,reject,🆎 AdBlock
   - RULE-SET,icloud,DIRECT
   - RULE-SET,apple,DIRECT
   - RULE-SET,google,DIRECT
   - RULE-SET,proxy,🗿 节点选择
   - RULE-SET,direct,🎯 全球直连
+  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,cncidr,🎯 全球直连
   - RULE-SET,telegramcidr,📲 电报信息
   - GEOIP,,DIRECT
-  - GEOIP,CN,DIRECT
+  - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼

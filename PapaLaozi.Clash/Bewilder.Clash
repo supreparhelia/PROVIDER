@@ -128,7 +128,7 @@ proxy-groups:
       - PapaLaozi
       - OpenitNode
 proxy-providers:
-  NullNode:
+  PapaLaozi:
     type: http
     url: "https://raw.fastgit.org/FMYC2015/PROVIDER/main/PapaLaozi.Clash/PapaLaozi.yaml"
     path: PapaLaozi.Clash/PapaLaozi.yaml

@@ -9,33 +9,32 @@ external-controller: 0.0.0.0:9090
 proxies:
 
 proxy-groups:
-  - name: 🗿 节点选择
+  - name: 🗿 PAPALAOZI
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
     use:
-      - NullNode
-      - OpenitNode
+      - PapaLaozi
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
+    tolerance: 50
     proxies:
     use:
-      - NullNode
-      - OpenitNode
+      - PapaLaozi
   - name: 🚫 运营劫持
     type: select
     proxies:
       - 🛑 全球拦截
       - 🎯 全球直连
-      - 🗿 节点选择
+      - 🗿 PAPALAOZI
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
-      - 🗿 节点选择
+      - 🗿 PAPALAOZI
       - ♻️ 自动选择
   - name: 🛑 全球拦截
     type: select
@@ -45,26 +44,15 @@ proxy-groups:
   - name: 🐟 漏网之鱼
     type: select
     proxies:
-      - 🗿 节点选择
-      - 🎯 全球直连
-      - ♻️ 自动选择
+      - 🗿 PAPALAOZI
+      - DIRECT
     use:
-      - NullNode
-      - OpenitNode
+      - PapaLaozi
 proxy-providers:
-  NullNode:
+  PapaLaozi:
     type: http
-    url: "https://nullnode.top/clashnode"
-    path: ./nullnode.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-  OpenitNode:
-    type: http
-    url: "https://raw.fastgit.org/yu-steven/openit/main/Clash.yaml"
-    path: OpenitNode.Clash/OpenitNode.yaml
+    url: "https://raw.fastgit.org/FMYC2015/PROVIDER/main/PapaLaozi.Clash/PapaLaozi.yaml"
+    path: PapaLaozi.Clash/PapaLaozi.yaml
     interval: 3600
     health-check:
       enable: true
@@ -164,11 +152,11 @@ rules:
   - RULE-SET,icloud,🎯 全球直连
   - RULE-SET,apple,🎯 全球直连
   - RULE-SET,google,🎯 全球直连
-  - RULE-SET,proxy,🗿 节点选择
+  - RULE-SET,proxy,🗿 PAPALAOZI
   - RULE-SET,direct,🎯 全球直连
   - RULE-SET,lancidr,🎯 全球直连
   - RULE-SET,cncidr,🎯 全球直连
-  - RULE-SET,telegramcidr,🗿 节点选择
+  - RULE-SET,telegramcidr,🗿 PAPALAOZI
   - GEOIP,,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼

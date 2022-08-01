@@ -38,14 +38,6 @@ proxy-groups:
       - 🛑 全球拦截
       - 🎯 全球直连
       - 🗿 节点选择
-  - name: 🎥 NETFLIX
-    type: select
-    proxies:
-      - 🗿 节点选择
-      - 🎯 全球直连
-      - ♻️ 自动选择
-    use:
-      - NullNode 
   - name: 📺 YouTube
     type: select
     proxies:
@@ -54,6 +46,14 @@ proxy-groups:
       - ♻️ 自动选择
     use:
       - NullNode
+  - name: 🎥 NETFLIX
+    type: select
+    proxies:
+      - 🗿 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+    use:
+      - NullNode 
   - name: 📲 电报信息
     type: select
     proxies:

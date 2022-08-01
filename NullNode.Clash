@@ -8,7 +8,7 @@
 # ┃┃╱┃┃┃╰╯┃╰┫╰╮┃┃╱┃┃┃╰╯┃╰╯┃┃━┫
 # ╰╯╱╰━┻━━┻━┻━╯╰╯╱╰━┻━━┻━━┻━━╯
 #---------------------------------
-# Generated at 2022-07-30 00:00 by PapaLaozi
+# Generated at 2022-08-01 00:00 by PapaLaozi
 port: 7890
 socks-port: 7891
 allow-lan: true

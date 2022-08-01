@@ -29,28 +29,6 @@ proxy-groups:
       - 🛑 全球拦截
       - 🎯 全球直连
       - 🗿 节点选择
-  - name: 🌎 国外媒体
-    type: select
-    proxies:
-      - 🗿 节点选择
-      - ♻️ 自动选择
-      - 🎯 全球直连
-    use:
-      - OpenitNode
-  - name: 🌏 国内媒体
-    type: select
-    proxies:
-      - 🗿 节点选择
-      - 🎯 全球直连
-    use:
-      - OpenitNode
-  - name: 📢 谷歌FCM
-    type: select
-    proxies:
-      - 🗿 节点选择
-      - 🎯 全球直连
-    use:
-      - OpenitNode
   - name: 📺 YouTube
     type: select
     proxies:
@@ -74,20 +52,6 @@ proxy-groups:
       - 🎯 全球直连
     use:
       - OpenitNode
-  - name: Ⓜ️ 微软服务
-    type: select
-    proxies:
-      - 🎯 全球直连
-      - 🗿 节点选择
-    use:
-      - OpenitNode
-  - name: 🍎 苹果服务
-    type: select
-    proxies:
-      - 🗿 节点选择
-      - 🎯 全球直连
-    use:
-      - OpenitNode
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -95,16 +59,6 @@ proxy-groups:
       - 🗿 节点选择
       - ♻️ 自动选择
   - name: 🛑 全球拦截
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🍃 应用净化
-    type: select
-    proxies:
-      - REJECT
-      - DIRECT
-  - name: 🆎 AdBlock
     type: select
     proxies:
       - REJECT
@@ -305,7 +259,7 @@ rules:
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
   - RULE-SET,private,DIRECT
-  - RULE-SET,reject,🆎 AdBlock
+  - RULE-SET,reject,🛑 全球拦截
   - RULE-SET,icloud,DIRECT
   - RULE-SET,apple,DIRECT
   - RULE-SET,google,DIRECT

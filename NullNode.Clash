@@ -38,29 +38,6 @@ proxy-groups:
       - 🛑 全球拦截
       - 🎯 全球直连
       - 🗿 节点选择
-  - name: 📺 YouTube
-    type: select
-    proxies:
-      - 🗿 节点选择
-      - 🎯 全球直连
-      - ♻️ 自动选择
-    use:
-      - NullNode
-  - name: 🎥 NETFLIX
-    type: select
-    proxies:
-      - 🗿 节点选择
-      - 🎯 全球直连
-      - ♻️ 自动选择
-    use:
-      - NullNode 
-  - name: 📲 电报信息
-    type: select
-    proxies:
-      - 🗿 节点选择
-      - 🎯 全球直连
-    use:
-      - NullNode
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -91,6 +68,12 @@ proxy-providers:
       interval: 600
       url: http://www.gstatic.com/generate_204
 rule-providers:
+  applications:
+    type: http
+    behavior: classical
+    url: "https://raw.fastgit.org/Loyalsoldier/clash-rules/release/applications.txt"
+    path: ./ruleset/applications.yaml
+    interval: 86400
   reject:
     type: http
     behavior: domain
@@ -170,113 +153,19 @@ rule-providers:
     path: ./ruleset/lancidr.yaml
     interval: 86400
 rules:
-  - DOMAIN-KEYWORD,youtube,📺 YouTube
-  - DOMAIN,youtubei.googleapis.com,📺 YouTube
-  - DOMAIN,yt3.ggpht.com,📺 YouTube
-  - DOMAIN-SUFFIX,googlevideo.com,📺 YouTube
-  - DOMAIN-SUFFIX,gvt2.com,📺 YouTube
-  - DOMAIN-SUFFIX,withyoutube.com,📺 YouTube
-  - DOMAIN-SUFFIX,youtu.be,📺 YouTube
-  - DOMAIN-SUFFIX,youtube-nocookie.com,📺 YouTube
-  - DOMAIN-SUFFIX,youtube.com,📺 YouTube
-  - DOMAIN-SUFFIX,youtubeeducation.com,📺 YouTube
-  - DOMAIN-SUFFIX,youtubegaming.com,📺 YouTube
-  - DOMAIN-SUFFIX,youtubekids.com,📺 YouTube
-  - DOMAIN-SUFFIX,yt.be,📺 YouTube
-  - DOMAIN-SUFFIX,ytimg.com,📺 YouTube
-  - DOMAIN-KEYWORD,netflixdnstest,🎥 NETFLIX
-  - DOMAIN,netflix.com.edgesuite.net,🎥 NETFLIX
-  - DOMAIN-SUFFIX,fast.com,🎥 NETFLIX
-  - DOMAIN-SUFFIX,netflix.com,🎥 NETFLIX
-  - DOMAIN-SUFFIX,netflix.net,🎥 NETFLIX
-  - DOMAIN-SUFFIX,netflixdnstest0.com,🎥 NETFLIX
-  - DOMAIN-SUFFIX,netflixdnstest1.com,🎥 NETFLIX
-  - DOMAIN-SUFFIX,netflixdnstest2.com,🎥 NETFLIX
-  - DOMAIN-SUFFIX,netflixdnstest3.com,🎥 NETFLIX
-  - DOMAIN-SUFFIX,netflixdnstest4.com,🎥 NETFLIX
-  - DOMAIN-SUFFIX,netflixdnstest5.com,🎥 NETFLIX
-  - DOMAIN-SUFFIX,netflixdnstest6.com,🎥 NETFLIX
-  - DOMAIN-SUFFIX,netflixdnstest7.com,🎥 NETFLIX
-  - DOMAIN-SUFFIX,netflixdnstest8.com,🎥 NETFLIX
-  - DOMAIN-SUFFIX,netflixdnstest9.com,🎥 NETFLIX
-  - DOMAIN-SUFFIX,nflxext.com,🎥 NETFLIX
-  - DOMAIN-SUFFIX,nflximg.com,🎥 NETFLIX
-  - DOMAIN-SUFFIX,nflximg.net,🎥 NETFLIX
-  - DOMAIN-SUFFIX,nflxso.net,🎥 NETFLIX
-  - DOMAIN-SUFFIX,nflxvideo.net,🎥 NETFLIX
-  - IP-CIDR,8.41.4.0/24,🎥 NETFLIX,no-resolve
-  - IP-CIDR,23.246.0.0/18,🎥 NETFLIX,no-resolve
-  - IP-CIDR,37.77.184.0/21,🎥 NETFLIX,no-resolve
-  - IP-CIDR,38.72.126.0/24,🎥 NETFLIX,no-resolve
-  - IP-CIDR,45.57.0.0/17,🎥 NETFLIX,no-resolve
-  - IP-CIDR,64.120.128.0/17,🎥 NETFLIX,no-resolve
-  - IP-CIDR,66.197.128.0/17,🎥 NETFLIX,no-resolve
-  - IP-CIDR,69.53.224.0/19,🎥 NETFLIX,no-resolve
-  - IP-CIDR,103.87.204.0/22,🎥 NETFLIX,no-resolve
-  - IP-CIDR,108.175.32.0/20,🎥 NETFLIX,no-resolve
-  - IP-CIDR,185.2.220.0/22,🎥 NETFLIX,no-resolve
-  - IP-CIDR,185.9.188.0/22,🎥 NETFLIX,no-resolve
-  - IP-CIDR,192.173.64.0/18,🎥 NETFLIX,no-resolve
-  - IP-CIDR,198.38.96.0/19,🎥 NETFLIX,no-resolve
-  - IP-CIDR,198.45.48.0/20,🎥 NETFLIX,no-resolve
-  - IP-CIDR,207.45.72.0/22,🎥 NETFLIX,no-resolve
-  - IP-CIDR,208.75.76.0/22,🎥 NETFLIX,no-resolve
-  - PROCESS-NAME,v2ray,DIRECT
-  - PROCESS-NAME,xray,DIRECT
-  - PROCESS-NAME,naive,DIRECT
-  - PROCESS-NAME,trojan,DIRECT
-  - PROCESS-NAME,trojan-go,DIRECT
-  - PROCESS-NAME,ss-local,DIRECT
-  - PROCESS-NAME,privoxy,DIRECT
-  - PROCESS-NAME,leaf,DIRECT
-  - PROCESS-NAME,v2ray.exe,DIRECT
-  - PROCESS-NAME,xray.exe,DIRECT
-  - PROCESS-NAME,naive.exe,DIRECT
-  - PROCESS-NAME,trojan.exe,DIRECT
-  - PROCESS-NAME,trojan-go.exe,DIRECT
-  - PROCESS-NAME,ss-local.exe,DIRECT
-  - PROCESS-NAME,privoxy.exe,DIRECT
-  - PROCESS-NAME,leaf.exe,DIRECT
-  - PROCESS-NAME,Surge,DIRECT
-  - PROCESS-NAME,Surge 2,DIRECT
-  - PROCESS-NAME,Surge 3,DIRECT
-  - PROCESS-NAME,Surge 4,DIRECT
-  - PROCESS-NAME,Surge%202,DIRECT
-  - PROCESS-NAME,Surge%203,DIRECT
-  - PROCESS-NAME,Surge%204,DIRECT
-  - PROCESS-NAME,Thunder,DIRECT
-  - PROCESS-NAME,DownloadService,DIRECT
-  - PROCESS-NAME,qBittorrent,DIRECT
-  - PROCESS-NAME,Transmission,DIRECT
-  - PROCESS-NAME,fdm,DIRECT
-  - PROCESS-NAME,aria2c,DIRECT
-  - PROCESS-NAME,Folx,DIRECT
-  - PROCESS-NAME,NetTransport,DIRECT
-  - PROCESS-NAME,uTorrent,DIRECT
-  - PROCESS-NAME,WebTorrent,DIRECT
-  - PROCESS-NAME,aria2c.exe,DIRECT
-  - PROCESS-NAME,BitComet.exe,DIRECT
-  - PROCESS-NAME,fdm.exe,DIRECT
-  - PROCESS-NAME,NetTransport.exe,DIRECT
-  - PROCESS-NAME,qbittorrent.exe,DIRECT
-  - PROCESS-NAME,Thunder.exe,DIRECT
-  - PROCESS-NAME,ThunderVIP.exe,DIRECT
-  - PROCESS-NAME,transmission-daemon.exe,DIRECT
-  - PROCESS-NAME,transmission-qt.exe,DIRECT
-  - PROCESS-NAME,uTorrent.exe,DIRECT
-  - PROCESS-NAME,WebTorrent.exe,DIRECT
-  - DOMAIN,clash.razord.top,DIRECT
-  - DOMAIN,yacd.haishan.me,DIRECT
-  - RULE-SET,private,DIRECT
+  - RULE-SET,applications,🎯 全球直连
+  - DOMAIN,clash.razord.top,🎯 全球直连
+  - DOMAIN,yacd.haishan.me,🎯 全球直连
+  - RULE-SET,private,🎯 全球直连
   - RULE-SET,reject,🛑 全球拦截
-  - RULE-SET,icloud,DIRECT
-  - RULE-SET,apple,DIRECT
-  - RULE-SET,google,DIRECT
+  - RULE-SET,icloud,🎯 全球直连
+  - RULE-SET,apple,🎯 全球直连
+  - RULE-SET,google,🎯 全球直连
   - RULE-SET,proxy,🗿 节点选择
   - RULE-SET,direct,🎯 全球直连
-  - RULE-SET,lancidr,DIRECT
+  - RULE-SET,lancidr,🎯 全球直连
   - RULE-SET,cncidr,🎯 全球直连
-  - RULE-SET,telegramcidr,📲 电报信息
-  - GEOIP,,DIRECT
+  - RULE-SET,telegramcidr,🗿 节点选择
+  - GEOIP,,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼

@@ -329,7 +329,7 @@ rules:
   - RULE-SET,icloud,DIRECT
   - RULE-SET,apple,DIRECT
   - RULE-SET,google,DIRECT
-  - RULE-SET,proxy,🗿 节点选择
+  - RULE-SET,proxy,🗿 PAPALAOZI
   - RULE-SET,direct,🎯 全球直连
   - RULE-SET,lancidr,DIRECT
   - RULE-SET,cncidr,🎯 全球直连

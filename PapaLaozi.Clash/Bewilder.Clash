@@ -87,7 +87,7 @@ proxy-groups:
       - 🎯 全球直连
       - 🗿 节点选择
     use:
-      - NullNode
+      - PapaLaozi
       - OpenitNode
   - name: 🍎 苹果服务
     type: select

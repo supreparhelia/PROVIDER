@@ -226,6 +226,20 @@ rule-providers:
     path: ./ruleset/lancidr.yaml
     interval: 86400
 rules:
+  - DOMAIN-KEYWORD,youtube,📺 YouTube
+  - DOMAIN,youtubei.googleapis.com,📺 YouTube
+  - DOMAIN,yt3.ggpht.com,📺 YouTube
+  - DOMAIN-SUFFIX,googlevideo.com,📺 YouTube
+  - DOMAIN-SUFFIX,gvt2.com,📺 YouTube
+  - DOMAIN-SUFFIX,withyoutube.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtu.be,📺 YouTube
+  - DOMAIN-SUFFIX,youtube-nocookie.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtube.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtubeeducation.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtubegaming.com,📺 YouTube
+  - DOMAIN-SUFFIX,youtubekids.com,📺 YouTube
+  - DOMAIN-SUFFIX,yt.be,📺 YouTube
+  - DOMAIN-SUFFIX,ytimg.com,📺 YouTube
   - DOMAIN-KEYWORD,netflixdnstest,🎥 NETFLIX
   - DOMAIN,netflix.com.edgesuite.net,🎥 NETFLIX
   - DOMAIN-SUFFIX,fast.com,🎥 NETFLIX
@@ -263,20 +277,6 @@ rules:
   - IP-CIDR,198.45.48.0/20,🎥 NETFLIX,no-resolve
   - IP-CIDR,207.45.72.0/22,🎥 NETFLIX,no-resolve
   - IP-CIDR,208.75.76.0/22,🎥 NETFLIX,no-resolve
-  - DOMAIN-KEYWORD,youtube,📺 YouTube
-  - DOMAIN,youtubei.googleapis.com,📺 YouTube
-  - DOMAIN,yt3.ggpht.com,📺 YouTube
-  - DOMAIN-SUFFIX,googlevideo.com,📺 YouTube
-  - DOMAIN-SUFFIX,gvt2.com,📺 YouTube
-  - DOMAIN-SUFFIX,withyoutube.com,📺 YouTube
-  - DOMAIN-SUFFIX,youtu.be,📺 YouTube
-  - DOMAIN-SUFFIX,youtube-nocookie.com,📺 YouTube
-  - DOMAIN-SUFFIX,youtube.com,📺 YouTube
-  - DOMAIN-SUFFIX,youtubeeducation.com,📺 YouTube
-  - DOMAIN-SUFFIX,youtubegaming.com,📺 YouTube
-  - DOMAIN-SUFFIX,youtubekids.com,📺 YouTube
-  - DOMAIN-SUFFIX,yt.be,📺 YouTube
-  - DOMAIN-SUFFIX,ytimg.com,📺 YouTube
   - PROCESS-NAME,v2ray,DIRECT
   - PROCESS-NAME,xray,DIRECT
   - PROCESS-NAME,naive,DIRECT

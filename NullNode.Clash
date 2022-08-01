@@ -166,6 +166,5 @@ rules:
   - RULE-SET,lancidr,🎯 全球直连
   - RULE-SET,cncidr,🎯 全球直连
   - RULE-SET,telegramcidr,🗿 节点选择
-  - GEOIP,,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼

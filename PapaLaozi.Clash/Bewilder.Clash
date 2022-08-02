@@ -161,9 +161,11 @@ rules:
   - DOMAIN,yacd.haishan.me,🎯 全球直连
   - RULE-SET,private,🎯 全球直连
   - RULE-SET,reject,🛑 全球拦截
+  - DOMAIN,www.icloud.com,🗿 PAPALAOZI
+  - DOMAIN-SUFFIX,icloud-content.com,🗿 PAPALAOZI
   - RULE-SET,icloud,🎯 全球直连
-  - RULE-SET,apple,🎯 全球直连
-  - RULE-SET,google,🎯 全球直连
+  - RULE-SET,apple,🗿 PAPALAOZI
+  - RULE-SET,google,🗿 PAPALAOZI
   - RULE-SET,proxy,🗿 PAPALAOZI
   - RULE-SET,direct,🎯 全球直连
   - RULE-SET,lancidr,🎯 全球直连

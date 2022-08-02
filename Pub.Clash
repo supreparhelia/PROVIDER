@@ -169,12 +169,12 @@ rules:
   - RULE-SET,reject,🛑 全球拦截
   - RULE-SET,Hijacking,🚫 运营劫持
   - RULE-SET,icloud,🎯 全球直连
-  - RULE-SET,apple,🗿 节点选择
-  - RULE-SET,google,🗿 节点选择
-  - RULE-SET,proxy,🗿 节点选择
+  - RULE-SET,apple,🗿 PAPALAOZI
+  - RULE-SET,google,🗿 PAPALAOZI
+  - RULE-SET,proxy,🗿 PAPALAOZI
   - RULE-SET,direct,🎯 全球直连
   - RULE-SET,lancidr,🎯 全球直连
   - RULE-SET,cncidr,🎯 全球直连
-  - RULE-SET,telegramcidr,🗿 节点选择
+  - RULE-SET,telegramcidr,🗿 PAPALAOZI
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼

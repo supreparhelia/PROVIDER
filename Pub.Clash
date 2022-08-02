@@ -9,7 +9,7 @@ external-controller: 0.0.0.0:9090
 proxies:
 
 proxy-groups:
-  - name: 🗿 PAPALAOZI
+  - name: 🗿 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
@@ -31,12 +31,12 @@ proxy-groups:
     proxies:
       - 🛑 全球拦截
       - 🎯 全球直连
-      - 🗿 PAPALAOZI
+      - 🗿 节点选择
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
-      - 🗿 PAPALAOZI
+      - 🗿 节点选择
       - ♻️ 自动选择
   - name: 🛑 全球拦截
     type: select
@@ -46,7 +46,7 @@ proxy-groups:
   - name: 🐟 漏网之鱼
     type: select
     proxies:
-      - 🗿 PAPALAOZI
+      - 🗿 节点选择
       - DIRECT
     use:
       - NullNode
@@ -169,12 +169,12 @@ rules:
   - RULE-SET,reject,🛑 全球拦截
   - RULE-SET,Hijacking,🚫 运营劫持
   - RULE-SET,icloud,🎯 全球直连
-  - RULE-SET,apple,🗿 PAPALAOZI
-  - RULE-SET,google,🗿 PAPALAOZI
-  - RULE-SET,proxy,🗿 PAPALAOZI
+  - RULE-SET,apple,🗿 节点选择
+  - RULE-SET,google,🗿 节点选择
+  - RULE-SET,proxy,🗿 节点选择
   - RULE-SET,direct,🎯 全球直连
   - RULE-SET,lancidr,🎯 全球直连
   - RULE-SET,cncidr,🎯 全球直连
-  - RULE-SET,telegramcidr,🗿 PAPALAOZI
+  - RULE-SET,telegramcidr,🗿 节点选择
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼

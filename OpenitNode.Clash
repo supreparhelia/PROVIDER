@@ -157,7 +157,7 @@ rules:
   - RULE-SET,reject,🛑 全球拦截
   - RULE-SET,Hijacking,🚫 运营劫持
   - RULE-SET,icloud,🎯 全球直连
-  - RULE-SET,apple,🗿 节点选择
+  - RULE-SET,apple,🎯 全球直连
   - RULE-SET,google,🗿 节点选择
   - RULE-SET,proxy,🗿 节点选择
   - RULE-SET,direct,🎯 全球直连

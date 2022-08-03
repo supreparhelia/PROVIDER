@@ -181,7 +181,7 @@ rules:
   - RULE-SET,reject,🛑 全球拦截
   - RULE-SET,Hijacking,🚫 运营劫持
   - RULE-SET,icloud,🎯 全球直连
-  - RULE-SET,apple,🗿 PAPALAOZI
+  - RULE-SET,apple,🎯 全球直连
   - RULE-SET,google,🗿 PAPALAOZI
   - RULE-SET,proxy,🗿 PAPALAOZI
   - RULE-SET,direct,🎯 全球直连

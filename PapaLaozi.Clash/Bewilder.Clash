@@ -15,6 +15,7 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
     use:
+      - NullNode
       - PapaLaozi
       - OpenitNode
   - name: ♻️ 自动选择
@@ -24,6 +25,7 @@ proxy-groups:
     tolerance: 50
     proxies:
     use:
+      - NullNode
       - PapaLaozi
       - OpenitNode
   - name: 🚫 运营劫持
@@ -49,9 +51,19 @@ proxy-groups:
       - 🗿 PAPALAOZI
       - DIRECT
     use:
+      - NullNode
       - PapaLaozi
       - OpenitNode
 proxy-providers:
+  NullNode:
+    type: http
+    url: "https://nullnode.top/clashnode"
+    path: ./nullnode.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
   PapaLaozi:
     type: http
     url: "https://raw.fastgit.org/FMYC2015/PROVIDER/main/PapaLaozi.Clash/PapaLaozi.yaml"

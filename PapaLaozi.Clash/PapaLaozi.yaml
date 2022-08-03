@@ -1,101 +1,203 @@
 proxies:
-  - {"type":"ss","name":"🇨🇳中国🛩️@PapaLaozi1","server":"14.29.124.168","port":25254,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"🇨🇳中国🛩️@PapaLaozi2","server":"14.29.124.168","port":25217,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"🇨🇳中国🛩️@PapaLaozi3","server":"14.29.124.168","port":25296,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"🇺🇸美国🛩️@PapaLaozi4","server":"5.188.0.151","port":800,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"🇨🇳中国🛩️@PapaLaozi5","server":"14.29.124.168","port":25218,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ssr","name":"🇷🇺俄罗斯联邦🛩️@PapaLaozi6","server":"92.38.152.62","port":10629,"protocol":"auth_chain_a","cipher":"dummy","obfs":"plain","password":".hideu0430.","obfs-param":"WkVNMWRGcFRPVEpqUnpWdldWaFI","protocol-param":"258433:lUoukm"}
-  - {"type":"ss","name":"🇨🇳中国🛩️@PapaLaozi7","server":"14.29.124.168","port":25231,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ss","name":"🇨🇳中国🛩️@PapaLaozi8","server":"14.29.124.168","port":25267,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
-  - {"type":"ssr","name":"🇺🇸美国🛩️@PapaLaozi9","server":"79.110.177.102","port":10629,"protocol":"auth_chain_a","cipher":"dummy","obfs":"plain","password":".hideu0430.","obfs-param":"WkVNMWRGcFRPVEpqUnpWdldWaFI","protocol-param":"258433:lUoukm"}
-  - {"type":"trojan","name":"🇺🇸美国🛩️@PapaLaozi10","server":"us-trojan.bonds.id","port":443,"password":"38239dd0-902b-11eb-afc1-1239d0255272","udp":true,"skip-cert-verify":true}
-  - {"type":"trojan","name":"🇯🇵日本🛩️@PapaLaozi11","server":"www.tokyo2023.ga","port":443,"password":"4f7dc540-d244-4e64-af21-4b5bb300add3","udp":true,"skip-cert-verify":true}
-  - {"type":"ss","name":"🇨🇦加拿大🛩️@PapaLaozi12","server":"134.195.196.178","port":800,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"🇨🇦加拿大🛩️@PapaLaozi13","server":"134.195.196.178","port":801,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"🇨🇦加拿大🛩️@PapaLaozi14","server":"134.195.196.178","port":802,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"🇨🇦加拿大🛩️@PapaLaozi15","server":"134.195.196.178","port":803,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"🇨🇦加拿大🛩️@PapaLaozi16","server":"134.195.196.178","port":804,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"🇨🇦加拿大🛩️@PapaLaozi17","server":"134.195.196.178","port":805,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"🇨🇦加拿大🛩️@PapaLaozi18","server":"134.195.196.178","port":806,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"🇨🇦加拿大🛩️@PapaLaozi19","server":"134.195.196.178","port":807,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"🇨🇦加拿大🛩️@PapaLaozi20","server":"134.195.196.178","port":808,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"🇨🇦加拿大🛩️@PapaLaozi21","server":"134.195.196.178","port":809,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"🇨🇦加拿大🛩️@PapaLaozi22","server":"134.195.196.178","port":810,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"🇨🇦加拿大🛩️@PapaLaozi23","server":"134.195.196.178","port":811,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"🇨🇦加拿大🛩️@PapaLaozi24","server":"134.195.196.178","port":812,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi25","server":"172.99.190.61","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi26","server":"172.99.190.61","port":2376,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi27","server":"172.99.190.61","port":3306,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi28","server":"172.99.190.61","port":5000,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi29","server":"172.99.190.61","port":5003,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi30","server":"172.99.190.61","port":5600,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi31","server":"172.99.190.61","port":5601,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi32","server":"172.99.190.61","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi33","server":"172.99.190.61","port":6679,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi34","server":"172.99.190.61","port":7001,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi35","server":"172.99.190.61","port":7306,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi36","server":"172.99.190.61","port":8000,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi37","server":"172.99.190.61","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi38","server":"172.99.190.61","port":8080,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi39","server":"172.99.190.61","port":8090,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi40","server":"172.99.190.61","port":8091,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi41","server":"172.99.190.61","port":8118,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi42","server":"172.99.190.61","port":8119,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi43","server":"172.99.190.61","port":8881,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi44","server":"172.99.190.61","port":8882,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi45","server":"172.99.190.61","port":8888,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi46","server":"172.99.190.61","port":9101,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
-  - {"type":"ss","name":"🇬🇧英国🛩️@PapaLaozi47","server":"172.99.190.61","port":9102,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
-  - {"type":"trojan","name":"🇭🇰香港🛩️@PapaLaozi48","server":"730hk001.ok365.cyou","port":443,"password":"96436d4c-bb86-4c6e-afa0-1ab333280365","udp":true,"skip-cert-verify":true,"sni":"730hk001.ok365.cyou"}
-  - {"type":"trojan","name":"🇭🇰香港🛩️@PapaLaozi49","server":"730hk002.ok365.cyou","port":443,"password":"96436d4c-bb86-4c6e-afa0-1ab333280365","udp":true,"skip-cert-verify":true,"sni":"730hk002.ok365.cyou"}
-  - {"type":"trojan","name":"🇭🇰香港🛩️@PapaLaozi50","server":"730hk003.ok365.cyou","port":443,"password":"96436d4c-bb86-4c6e-afa0-1ab333280365","udp":true,"skip-cert-verify":true,"sni":"730hk003.ok365.cyou"}
-  - {"type":"trojan","name":"🇸🇬新加坡🛩️@PapaLaozi51","server":"730tw01.ok365.cyou","port":443,"password":"96436d4c-bb86-4c6e-afa0-1ab333280365","udp":true,"skip-cert-verify":true,"sni":"730tw01.ok365.cyou"}
-  - {"type":"trojan","name":"🇹🇼台湾🛩️@PapaLaozi52","server":"727tw01.ok365.cyou","port":443,"password":"96436d4c-bb86-4c6e-afa0-1ab333280365","udp":true,"skip-cert-verify":true,"sni":"727tw01.ok365.cyou"}
-  - {"type":"trojan","name":"🇨🇳中国🛩️@PapaLaozi53","server":"gzn1.bdpyyds.top","port":20231,"password":"99291396-3fee-3156-ae1d-caf41676d337","udp":true,"skip-cert-verify":true,"sni":"hka5.bieqiang.xyz"}
-  - {"type":"trojan","name":"🇯🇵日本🛩️@PapaLaozi54","server":"730jp.ok365.cyou","port":443,"password":"96436d4c-bb86-4c6e-afa0-1ab333280365","udp":true,"skip-cert-verify":true,"sni":"730jp.ok365.cyou"}
-  - {"type":"trojan","name":"🇯🇵日本🛩️@PapaLaozi55","server":"trs07.bolab.net","port":443,"password":"6990ca1bdccb0de3d9a0c5640634e29c","udp":true,"skip-cert-verify":true,"sni":"trs07.bolab.net"}
-  - {"type":"trojan","name":"🇨🇳中国🛩️@PapaLaozi56","server":"twb.bdpyyds.top","port":33201,"password":"99291396-3fee-3156-ae1d-caf41676d337","udp":true,"skip-cert-verify":true,"sni":"hinetddns.sttlink.xyz"}
-  - {"type":"ssr","name":"🇨🇳中国🛩️@PapaLaozi57","server":"183.232.141.93","port":601,"protocol":"auth_aes128_md5","cipher":"chacha20-ietf","obfs":"plain","password":"mblank1port","obfs-param":"dC5tZS92cG5oYXQ","protocol-param":"5399:KKKKKKKKKK45334"}
-  - {"type":"trojan","name":"🇨🇳中国🛩️@PapaLaozi58","server":"gzydv2.bdpyyds.top","port":28021,"password":"99291396-3fee-3156-ae1d-caf41676d337","udp":true,"skip-cert-verify":true,"sni":"sga2.baidupi.best"}
-  - {"type":"ss","name":"🇫🇷法国🛩️@PapaLaozi59","server":"51.38.118.42","port":811,"cipher":"chacha20-ietf-poly1305","password":"Ultr@r00t_2017"}
-  - {"type":"ss","name":"🇺🇸美国🛩️@PapaLaozi60","server":"172.99.188.71","port":8882,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
-  - {"type":"ss","name":"🇺🇸美国🛩️@PapaLaozi61","server":"172.99.188.71","port":3389,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇺🇸美国🛩️@PapaLaozi62","server":"172.99.188.71","port":6679,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
-  - {"type":"ss","name":"🇺🇸美国🛩️@PapaLaozi63","server":"172.99.188.71","port":6697,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
-  - {"type":"ss","name":"🇺🇸美国🛩️@PapaLaozi64","server":"172.99.188.71","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
-  - {"type":"ss","name":"🇺🇸美国🛩️@PapaLaozi65","server":"172.99.188.71","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
-  - {"type":"ss","name":"🇺🇸美国🛩️@PapaLaozi66","server":"172.99.188.71","port":5000,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
-  - {"type":"ss","name":"🇰🇷韩国🛩️@PapaLaozi67","server":"13.124.29.75","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
-  - {"type":"ss","name":"🇺🇸美国🛩️@PapaLaozi68","server":"172.99.188.71","port":8119,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
-  - {"type":"trojan","name":"🇨🇳中国🛩️@PapaLaozi69","server":"pp1.zhengzhongfeizhu.xyz","port":32002,"password":"eb2f8154-ff58-3b99-b393-28c8eecdbe64","udp":true,"skip-cert-verify":true,"sni":"pp1.zhengzhongfeizhu.xyz"}
-  - {"type":"trojan","name":"🇨🇳中国🛩️@PapaLaozi70","server":"pp1.zhengzhongfeizhu.xyz","port":34003,"password":"177501cc-f0c2-3cc3-b9a7-8c1e8e27655f","udp":true,"skip-cert-verify":true,"sni":"pp1.zhengzhongfeizhu.xyz"}
-  - {"type":"ss","name":"🇷🇺俄罗斯联邦🛩️@PapaLaozi71","server":"92.223.65.31","port":29092,"cipher":"chacha20-ietf-poly1305","password":"ypoq8dJBPqst"}
-  - {"type":"trojan","name":"🇯🇵日本🛩️@PapaLaozi72","server":"yokohama.freetrade.link","port":443,"password":"C3YS0KAq8x5jgpNnCeC3aa3DFXw9Aczu8DaeBpy6Fy34xSZEYORDTIZRlSl72O","udp":true,"skip-cert-verify":true,"sni":"yokohama.freetrade.link"}
-  - {"type":"trojan","name":"🇸🇬新加坡🛩️@PapaLaozi73","server":"simpang.freetrade.link","port":443,"password":"XEyN0OZ28xxCDO7C83DeAa3YcSjYKTgFA5n9IRpFwuB3qSz4aZClSapy3eRl6D","udp":true,"skip-cert-verify":true,"sni":"simpang.freetrade.link"}
-  - {"type":"vmess","name":"🇨🇳中国🛩️@PapaLaozi74","server":"36.138.178.22","port":"13003","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"trojan","name":"🇨🇳中国🛩️@PapaLaozi75","server":"pp1.zhengzhongfeizhu.xyz","port":34003,"password":"eb2f8154-ff58-3b99-b393-28c8eecdbe64","udp":true,"skip-cert-verify":true,"sni":"pp1.zhengzhongfeizhu.xyz"}
-  - {"type":"vmess","name":"🇨🇳中国🛩️@PapaLaozi76","server":"36.138.178.22","port":"13006","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"trojan","name":"🇨🇳中国🛩️@PapaLaozi77","server":"pp1.zhengzhongfeizhu.xyz","port":34004,"password":"2f606ee8-3cfa-30b2-a191-f88efe912f5c","udp":true,"skip-cert-verify":true,"sni":"pp1.zhengzhongfeizhu.xyz"}
-  - {"type":"vmess","name":"🇨🇳中国🛩️@PapaLaozi78","server":"36.138.178.22","port":"13203","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"trojan","name":"🇨🇳中国🛩️@PapaLaozi79","server":"pp1.zhengzhongfeizhu.xyz","port":34001,"password":"7688df6f-bf65-3368-b55e-d78efea6a582","udp":true,"skip-cert-verify":true,"sni":"pp1.zhengzhongfeizhu.xyz"}
-  - {"type":"vmess","name":"🇨🇳中国🛩️@PapaLaozi80","server":"120.233.7.221","port":"18005","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"trojan","name":"🇨🇳中国🛩️@PapaLaozi81","server":"pp1.zhengzhongfeizhu.xyz","port":32002,"password":"2f606ee8-3cfa-30b2-a191-f88efe912f5c","udp":true,"skip-cert-verify":true,"sni":"pp1.zhengzhongfeizhu.xyz"}
-  - {"type":"trojan","name":"🇨🇳中国🛩️@PapaLaozi82","server":"pp1.zhengzhongfeizhu.xyz","port":33002,"password":"7688df6f-bf65-3368-b55e-d78efea6a582","udp":true,"skip-cert-verify":true,"sni":"pp1.zhengzhongfeizhu.xyz"}
-  - {"type":"vmess","name":"🇨🇳中国🛩️@PapaLaozi83","server":"120.233.7.221","port":"32005","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"🇭🇰香港🛩️@PapaLaozi84","server":"42.3.19.58","port":"39999","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp","tls":true}
-  - {"type":"vmess","name":"🇨🇳中国🛩️@PapaLaozi85","server":"36.138.178.22","port":"13007","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"🇨🇳中国🛩️@PapaLaozi86","server":"36.138.178.22","port":"13004","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"🇨🇳中国🛩️@PapaLaozi87","server":"36.138.178.22","port":"13101","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"trojan","name":"🇨🇳中国🛩️@PapaLaozi88","server":"pp1.zhengzhongfeizhu.xyz","port":34002,"password":"7688df6f-bf65-3368-b55e-d78efea6a582","udp":true,"skip-cert-verify":true,"sni":"pp1.zhengzhongfeizhu.xyz"}
-  - {"type":"trojan","name":"🇨🇳中国🛩️@PapaLaozi89","server":"pp1.zhengzhongfeizhu.xyz","port":34000,"password":"eb2f8154-ff58-3b99-b393-28c8eecdbe64","udp":true,"skip-cert-verify":true,"sni":"pp1.zhengzhongfeizhu.xyz"}
-  - {"type":"trojan","name":"🇨🇳中国🛩️@PapaLaozi90","server":"pp1.zhengzhongfeizhu.xyz","port":32000,"password":"2f606ee8-3cfa-30b2-a191-f88efe912f5c","udp":true,"skip-cert-verify":true,"sni":"pp1.zhengzhongfeizhu.xyz"}
-  - {"type":"trojan","name":"🇨🇳中国🛩️@PapaLaozi91","server":"pp1.zhengzhongfeizhu.xyz","port":32003,"password":"2f606ee8-3cfa-30b2-a191-f88efe912f5c","udp":true,"skip-cert-verify":true,"sni":"pp1.zhengzhongfeizhu.xyz"}
-  - {"type":"ss","name":"🛩️@PapaLaozi92","server":"103.177.32.147","port":443,"cipher":"chacha20-ietf-poly1305","password":"8247a4cf6ed4","plugin":"v2ray-plugin","plugin-opts":{"mode":"websocket","mux":true,"skip-cert-verify":true,"path":"/","host":"twd1000tw001.fengchiline.xyz"}}
-  - {"type":"ssr","name":"🇺🇸美国🛩️@PapaLaozi93","server":"79.110.177.102","port":10629,"protocol":"auth_chain_a","cipher":"dummy","obfs":"plain","password":".hideu0430.","obfs-param":"VjJ0V1RrMVhVa2RqUmxKUVZrVndjVlZ1Y0Zka2JHUlhZVVpK","protocol-param":"258433:lUoukm"}
-  - {"type":"ssr","name":"🇨🇳中国🛩️@PapaLaozi94","server":"cngdcs4.langtg.xyz","port":560,"protocol":"auth_aes128_md5","cipher":"chacha20-ietf","obfs":"plain","password":"mblank1port","protocol-param":"2634:vFr9Fx23xZR(1)"}
-  - {"type":"ssr","name":"🇺🇸美国🛩️@PapaLaozi95","server":"172.82.176.66","port":10629,"protocol":"auth_chain_a","cipher":"dummy","obfs":"plain","password":".hideu0430.","protocol-param":"258433:lUoukm"}
-  - {"type":"vmess","name":"🇺🇸美国🛩️@PapaLaozi96","server":"138.2.25.235","port":"54421","uuid":"b3f4d3da-059a-43cd-90e6-023a49757ec6","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"🇯🇵日本🛩️@PapaLaozi97","server":"168.138.193.140","port":"40746","uuid":"d3cd3663-52b4-43e9-d1c0-3904034ac627","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"🇨🇳中国🛩️@PapaLaozi98","server":"36.138.178.22","port":"13001","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"🇨🇳中国🛩️@PapaLaozi99","server":"36.138.178.22","port":"13004","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
-  - {"type":"vmess","name":"🇨🇳中国🛩️@PapaLaozi100","server":"36.138.178.22","port":"13003","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    1","server":"36.138.178.22","port":"13003","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    2","server":"36.138.178.22","port":"13006","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    3","server":"36.138.178.22","port":"13203","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    4","server":"120.233.7.221","port":"32005","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    5","server":"36.138.178.22","port":"13007","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    6","server":"36.138.178.22","port":"13004","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    7","server":"36.138.178.22","port":"13101","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇺🇸 美国 🛩️@PapaLaozi1
+    8","server":"138.2.25.235","port":"54421","uuid":"b3f4d3da-059a-43cd-90e6-023a49757ec6","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇯🇵 日本 🛩️@PapaLaozi1
+    9","server":"168.138.193.140","port":"40746","uuid":"d3cd3663-52b4-43e9-d1c0-3904034ac627","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    10","server":"36.138.178.22","port":"13001","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    11","server":"36.138.178.22","port":"13003","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    12","server":"36.138.178.22","port":"13001","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    13","server":"120.233.7.221","port":"32002","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    14","server":"36.138.178.22","port":"13005","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    15","ws-opts":{"path":"/rocket","headers":{"host":"116.129.254.177"}},"server":"116.129.254.177","port":"65048","uuid":"0253b574-8020-3186-a647-0267295ac9bb","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"🇺🇸 美国 🛩️@PapaLaozi1
+    16","server":"138.2.25.235","port":"54421","uuid":"b3f4d3da-059a-43cd-90e6-023a49757ec6","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇯🇵 日本 🛩️@PapaLaozi1
+    17","ws-opts":{"path":"/","headers":{"host":"168.138.193.140"}},"server":"168.138.193.140","port":"10562","uuid":"02140cf3-8470-4b3d-e4a8-8d40fc2f7867","alterId":"0","cipher":"auto","network":"ws"}
+  - {"type":"vmess","name":"🇺🇸 美国 🛩️@PapaLaozi1
+    18","server":"138.2.25.235","port":"25201","uuid":"0f772cda-91f1-4f19-e859-86f5b80a844b","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇺🇸 美国 🛩️@PapaLaozi1
+    19","server":"23.234.234.206","port":"15860","uuid":"07b0517f-213a-40a7-fab5-3a45f02e3fae","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"vmess","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    20","server":"120.233.7.221","port":"18007","uuid":"67c50f6a-816d-3555-89b4-19dd29608f8b","alterId":"0","cipher":"auto","network":"tcp"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    21","server":"14.29.124.168","port":25254,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    22","server":"14.29.124.168","port":25217,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    23","server":"14.29.124.168","port":25296,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇺🇸 美国 🛩️@PapaLaozi1
+    24","server":"5.188.0.151","port":800,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    25","server":"14.29.124.168","port":25218,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    26","server":"14.29.124.168","port":25231,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    27","server":"14.29.124.168","port":25267,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇦 加拿大 🛩️@PapaLaozi1
+    28","server":"134.195.196.178","port":800,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇨🇦 加拿大 🛩️@PapaLaozi1
+    29","server":"134.195.196.178","port":801,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇨🇦 加拿大 🛩️@PapaLaozi1
+    30","server":"134.195.196.178","port":802,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇨🇦 加拿大 🛩️@PapaLaozi1
+    31","server":"134.195.196.178","port":803,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇨🇦 加拿大 🛩️@PapaLaozi1
+    32","server":"134.195.196.178","port":804,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇨🇦 加拿大 🛩️@PapaLaozi1
+    33","server":"134.195.196.178","port":805,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇨🇦 加拿大 🛩️@PapaLaozi1
+    34","server":"134.195.196.178","port":806,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇨🇦 加拿大 🛩️@PapaLaozi1
+    35","server":"134.195.196.178","port":807,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇨🇦 加拿大 🛩️@PapaLaozi1
+    36","server":"134.195.196.178","port":808,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇨🇦 加拿大 🛩️@PapaLaozi1
+    37","server":"134.195.196.178","port":809,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇨🇦 加拿大 🛩️@PapaLaozi1
+    38","server":"134.195.196.178","port":810,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇨🇦 加拿大 🛩️@PapaLaozi1
+    39","server":"134.195.196.178","port":811,"cipher":"chacha20-ietf-poly1305","password":"G!yBwPWH3Vao"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    40","server":"172.99.190.61","port":443,"cipher":"aes-256-gcm","password":"pKEW8JPByTVTLtM"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    41","server":"172.99.190.61","port":2376,"cipher":"aes-256-gcm","password":"faBAoD54k87UJG7"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    42","server":"172.99.190.61","port":3306,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    43","server":"172.99.190.61","port":5000,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    44","server":"172.99.190.61","port":5003,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    45","server":"172.99.190.61","port":5600,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    46","server":"172.99.190.61","port":5601,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    47","server":"172.99.190.61","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    48","server":"172.99.190.61","port":6679,"cipher":"aes-256-gcm","password":"TEzjfAYq2IjtuoS"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    49","server":"172.99.190.61","port":7001,"cipher":"aes-256-gcm","password":"RexnBgU7EV5ADxG"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    50","server":"172.99.190.61","port":7306,"cipher":"aes-256-gcm","password":"FoOiGlkAA9yPEGP"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    51","server":"172.99.190.61","port":8000,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    52","server":"172.99.190.61","port":8009,"cipher":"aes-256-gcm","password":"XKFKl2rULjIp74"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    53","server":"172.99.190.61","port":8080,"cipher":"aes-256-gcm","password":"KixLvKzwjekG00rm"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    54","server":"172.99.190.61","port":8090,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    55","server":"172.99.190.61","port":8091,"cipher":"aes-256-gcm","password":"PCnnH6SQSnfoS27"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    56","server":"172.99.190.61","port":8118,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    57","server":"172.99.190.61","port":8119,"cipher":"aes-256-gcm","password":"cdBIDV42DCwnfIN"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    58","server":"172.99.190.61","port":8881,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    59","server":"172.99.190.61","port":8882,"cipher":"aes-256-gcm","password":"kDWvXYZoTBcGkC4"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    60","server":"172.99.190.61","port":8888,"cipher":"aes-256-gcm","password":"Y6R9pAtvxxzmGC"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    61","server":"172.99.190.61","port":9101,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"🇬🇧 英国 🛩️@PapaLaozi1
+    62","server":"172.99.190.61","port":9102,"cipher":"aes-256-gcm","password":"e4FCWrgpkji3QY"}
+  - {"type":"ss","name":"🇫🇷 法国 🛩️@PapaLaozi1
+    63","server":"51.38.118.42","port":811,"cipher":"chacha20-ietf-poly1305","password":"Ultr@r00t_2017"}
+  - {"type":"ss","name":"🇺🇸 美国 🛩️@PapaLaozi1
+    64","server":"172.99.188.71","port":6379,"cipher":"aes-256-gcm","password":"zDNVedRFPQexG9v"}
+  - {"type":"ss","name":"🇷🇺 俄罗斯联邦 🛩️@PapaLaozi1
+    65","server":"92.223.65.31","port":29092,"cipher":"chacha20-ietf-poly1305","password":"ypoq8dJBPqst"}
+  - {"type":"ss","name":"🇸🇬 新加坡 🛩️@PapaLaozi1
+    66","server":"18.141.207.171","port":443,"cipher":"aes-256-cfb","password":"amazonskr05"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    67","server":"14.29.124.168","port":25210,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    68","server":"14.29.124.168","port":25220,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    69","server":"14.29.124.168","port":25271,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    70","server":"14.29.124.168","port":25241,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    71","server":"14.29.124.168","port":25294,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    72","server":"14.29.124.168","port":25270,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    73","server":"14.29.124.168","port":25245,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    74","server":"14.29.124.168","port":25284,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    75","server":"14.29.124.168","port":25226,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    76","server":"14.29.124.168","port":25235,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    77","server":"14.29.124.168","port":25251,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    78","server":"14.29.124.168","port":25268,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    79","server":"14.29.124.168","port":25230,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    80","server":"14.29.124.168","port":25297,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    81","server":"14.29.124.168","port":25252,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    82","server":"14.29.124.168","port":25238,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    83","server":"14.29.124.168","port":25283,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    84","server":"14.29.124.168","port":25279,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    85","server":"14.29.124.168","port":25233,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    86","server":"14.29.124.168","port":25287,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    87","server":"14.29.124.168","port":25272,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    88","server":"14.29.124.168","port":25219,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    89","server":"14.29.124.168","port":25280,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    90","server":"14.29.124.168","port":25289,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    91","server":"14.29.124.168","port":25207,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    92","server":"14.29.124.168","port":25286,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    93","server":"14.29.124.168","port":25261,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    94","server":"14.29.124.168","port":25259,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    95","server":"14.29.124.168","port":25256,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇨🇳 中国 🛩️@PapaLaozi1
+    96","server":"14.29.124.168","port":25295,"cipher":"aes-128-cfb","password":"QazEdcTgb159@$*"}
+  - {"type":"ss","name":"🇮🇹 意大利 🛩️@PapaLaozi1
+    97","server":"84.33.193.79","port":18760,"cipher":"aes-256-gcm","password":"hg49$WH8943g3"}
+  - {"type":"ss","name":"🇺🇸 美国 🛩️@PapaLaozi1
+    98","server":"172.99.188.71","port":5004,"cipher":"aes-256-gcm","password":"g5MeD6Ft3CWlJId"}
+  - {"type":"trojan","name":"🛩️@PapaLaozi1
+    99","server":"103.173.255.21","port":443,"password":"96d2badf-4ef7-41a9-be8b-19bb09468d28","udp":true,"skip-cert-verify":true,"sni":"download.windowsupdate1.com"}
+  - {"type":"trojan","name":"🛩️@PapaLaozi1
+    100","server":"103.173.255.234","port":443,"password":"96d2badf-4ef7-41a9-be8b-19bb09468d28","udp":true,"skip-cert-verify":true,"sni":"download.windowsupdate1.com"}
+  - {"type":"trojan","name":"🇯🇵 日本 🛩️@PapaLaozi1
+    101","server":"203.138.98.199","port":443,"password":"96d2badf-4ef7-41a9-be8b-19bb09468d28","udp":true,"skip-cert-verify":true,"sni":"download.windowsupdate1.com"}

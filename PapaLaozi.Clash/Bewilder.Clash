@@ -13,6 +13,7 @@ proxy-groups:
       - ♻️ 自动选择
       - DIRECT
     use:
+      - BiHaiNode
       - NullNode
       - PapaLaozi
       - OpenitNode
@@ -23,6 +24,7 @@ proxy-groups:
     tolerance: 50
     proxies:
     use:
+      - BiHaiNode
       - NullNode
       - PapaLaozi
       - OpenitNode
@@ -49,10 +51,20 @@ proxy-groups:
       - 🗿 PAPALAOZI
       - DIRECT
     use:
+      - BiHaiNode
       - NullNode
       - PapaLaozi
       - OpenitNode
 proxy-providers:
+  BiHaiNode:
+    type: http
+    url: "https://proxies.bihai.cf/clash/proxies?c=CN,HK,TW,RU,US,JP,KR,SG"
+    path: BiHai.Clash/BiHaiNode.yaml
+    interval: 3600
+    health-check:
+      enable: true
+      interval: 600
+      url: http://www.gstatic.com/generate_204
   NullNode:
     type: http
     url: "https://nullnode.top/clashnode"

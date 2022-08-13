@@ -58,7 +58,7 @@ proxy-groups:
 proxy-providers:
   BiHaiNode:
     type: http
-    url: "https://proxies.bihai.cf/clash/proxies?c=CN,HK,TW,RU,US,JP,KR,SG"
+    url: "https://proxies.bihai.cf/clash/proxies?c=CN,HK,TW,RU,JP,KR,SG"
     path: BiHai.Clash/BiHaiNode.yaml
     interval: 3600
     health-check:

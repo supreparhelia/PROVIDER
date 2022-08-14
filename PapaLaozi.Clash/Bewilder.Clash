@@ -168,7 +168,7 @@ rule-providers:
   lancidr:
     type: http
     behavior: ipcidr
-    url: "https://cdn.statically.io/gh/Loyalsoldier/clash-rules/release/lancidr.txt"
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt"
     path: ./ruleset/lancidr.yaml
     interval: 86400
 rules:

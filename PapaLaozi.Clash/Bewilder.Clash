@@ -15,7 +15,6 @@ proxy-groups:
     use:
       - BiHaiNode
       - NullNode
-      - PapaLaozi
       - OpenitNode
   - name: ♻️ 自动选择
     type: url-test
@@ -26,7 +25,6 @@ proxy-groups:
     use:
       - BiHaiNode
       - NullNode
-      - PapaLaozi
       - OpenitNode
   - name: 🚫 运营劫持
     type: select
@@ -53,7 +51,6 @@ proxy-groups:
     use:
       - BiHaiNode
       - NullNode
-      - PapaLaozi
       - OpenitNode
 proxy-providers:
   BiHaiNode:
@@ -74,18 +71,9 @@ proxy-providers:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
-  PapaLaozi:
-    type: http
-    url: "https://raw.fastgit.org/FMYC2015/PROVIDER/main/PapaLaozi.Clash/PapaLaozi.yaml"
-    path: PapaLaozi.Clash/PapaLaozi.yaml
-    interval: 3600
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
   OpenitNode:
     type: http
-    url: "https://raw.fastgit.org/yu-steven/openit/main/Clash.yaml"
+    url: "https://openit.daycat.space/clash"
     path: OpenitNode.Clash/OpenitNode.yaml
     interval: 3600
     health-check:

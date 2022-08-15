@@ -14,7 +14,5 @@
 
 本项目的规则集（RULE-SET）只适用于 Clash **Premium** 版本。Clash Premium 相对于普通版，增加了 **TUN 增强模式**，能接管设备所有 TCP 和 UDP 流量，类似 [Surge for Mac](https://nssurge.com) 的增强模式。更多高级特性请看[官方 wiki](https://github.com/Dreamacro/clash/wiki/premium-core-features)。
 
-👉[Telegram群组](http://t.me/PapaLaozi) 
-👉[Telegram频道](https://t.me/PapaLao) 
 
 私人频道，谢绝打扰！
